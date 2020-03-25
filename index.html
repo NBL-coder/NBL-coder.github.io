@@ -59,6 +59,33 @@
        display: grid;
        grid-template-columns: 1fr;
     }
+    .box h1{
+        color: rgb(124, 124, 124);
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    .box ul{
+        position: relative;
+    }
+    .box ul li{
+        color: rgb(124, 124, 124);
+        list-style: none;
+        padding: 10px;
+        width: 100%;
+        transition: color 0.5s;
+    }
+    .box ul li:hover{
+        transform: scale(1.01);
+        color: black;
+        border-left: 2px solid rgb(124, 124, 124);
+    }
+    .box ul li span{
+        width: 20 px;
+        display: inline-block;
+        margin-right: 10px;
+        text-align: center ;
+
+    }
     </style>
 </head>
 <body>
@@ -74,14 +101,18 @@
                 </div>
             </div>
             <div class="right">
-                <div>NGUYEN BAO LONG</div>  
+                <div>NGUYỄN BẢO LONG</div>  
             </div>
-        </div>
-        <div class="img-contaner">
-            <p ><a href="web.html"><img src ="avatar.png" alt="memes"  width="200px" height="200px"></a></p>
-        </div>
     </div>
-    
-    
+
+    <div class="box">
+        <h1>DANH SÁCH BÀI LAB</h1>
+        <ul>
+            <li><span>1</span>link 1</li>
+            <li><span>2</span>link 2</li>
+            <li><span>3</span>link 3</li>
+            <li><span>4</span>link 4</li>
+        </ul>
+    </div>
 </body>
 </html>
