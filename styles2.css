@@ -1,4 +1,8 @@
 
+    *{
+        margin: 0px;
+        box-sizing: border-box;
+    }
     body{
         background-image: url("./img/bg.jpg");
         background-size: cover;
@@ -161,7 +165,7 @@
         }
         .left{
             position: absolute;
-            right: 0px;
+            left: -1000px;
             height: 20vh;
             top: 16vh;
             display: flex;
