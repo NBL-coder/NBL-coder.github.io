@@ -1,0 +1,138 @@
+
+    body{
+        background-image: url("./img/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-content: center;
+    }
+    .container{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 15 px;
+        background-color: rgb(0, 0, 0,0.4);
+        border-radius: 40px;
+        animation: fadein 1s ease-in;
+      
+    }
+    .header{
+        padding: 20px;
+        background-color: rgb(0, 0, 0,0.2);
+        border-top-right-radius: 40px ;
+        border-top-left-radius: 40px;
+    }
+    .header > h2{
+        text-align: center;
+        margin-top: auto;
+        animation: fly 1s ease-in-out;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 20px;
+        animation: fly 2s ease-in-out;
+    }
+    .left{
+        display: flex;
+
+    }
+    .right{
+        display: flex;
+    }
+    .nav-bar > .left > div{
+        margin-right: 50px;
+        font-size: 1em;
+    }
+    .nav-bar > .right > div{
+        margin-left: 20px;
+        font-size: 1em;
+        color: white;
+    }
+    .nav-link{
+        height: 20px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+    .nav-link a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.5;
+    }
+    .nav-link a:hover{
+        color: black;
+    }
+    h2 
+    {
+        color: rgb(255, 255, 255);
+        height: 10PX;
+        text-align: center;
+        font-size: 30px;
+    }
+    .box h1{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        margin-left: 20px;
+        animation: fadein 2s ease-in-out;
+    }
+    .box ul{
+        position: relative;
+    }
+    .box ul li{
+        color: rgb(255, 255, 255);
+        list-style: none;
+        padding: 10px;
+        width: 100%;
+        transition: color 0.5s;
+    }
+    .box ul li:hover{
+        transform: scale(1.01);
+        color: white;
+        border-left: 2px solid rgb(255, 255, 255);
+    }
+    .box ul li span{
+        width: 20 px;
+        display: inline-block;
+        margin-right: 10px;
+        text-align: center ;
+    }
+    a {
+    text-decoration : none;
+    color: rgb(255, 255, 255);
+    }
+    a:hover
+    {
+        transform: scale(1.01);
+        padding: 5px 5px;
+        background-color: rgb(255, 255, 255,0.8);
+        border-radius: 5PX;
+        color: black;
+    }
+    @keyframes fadein{
+        from {
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes fly{
+        0%{
+            transform: translateY(-200px);
+            opacity: 0;
+        }
+        50%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fly2{
+        0%{
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+        50%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
