@@ -41,6 +41,7 @@
     }
     .right{
         display: flex;
+        color: rgb(124, 124, 124);
     }
     .header{
         padding: 20px;
@@ -219,4 +220,5 @@
     .nav-active2{
         animation: fadeout 0.5s ease-in;
         opacity: 0;
+        pointer-events: none;
     }
