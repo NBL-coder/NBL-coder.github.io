@@ -108,6 +108,18 @@
     }
     .box ul{
         position: relative;
+        padding: 10px;
+    }
+    .box .menu_2:hover{
+        background-color:rgb(0, 0, 0,0.1);
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+    .box ul:hover li a{
+        opacity: 0.2;
+    }
+    .box ul li a:hover{
+        opacity: 1;
     }
     .box ul li{
         color: rgb(255, 255, 255);
@@ -117,9 +129,7 @@
         transition: color 0.5s;
     }
     .box ul li:hover{
-        transform: scale(1.01);
-        color: white;
-        border-left: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid white;
     }
     .box ul li span{
         width: 20 px;
@@ -127,17 +137,35 @@
         margin-right: 10px;
         text-align: center ;
     }
-    a {
+    .box a {
     text-decoration : none;
     color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    transition: 0.5s;
+    z-index: 1;
     }
-    a:hover
+    .box a:hover
     {
         transform: scale(1.01);
         padding: 5px 5px;
         background-color: rgb(255, 255, 255,0.8);
         border-radius: 5PX;
         color: black;
+        opacity: 1;
+    }
+    a {
+        text-decoration : none;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        transition: 0.3s;
+        }
+     a:hover
+    {
+        padding: 5px 5px;
+        background-color: rgb(255, 255, 255,0.8);
+        border-radius: 5PX;
+        color: black;
+        opacity: 1;
     }
     .menu {
         position: absolute;
@@ -161,7 +189,11 @@
         list-style: none;
     }
     .menu_2 li{
-        animation: listfade 0.5s ease forwards ;
+        opacity: 0;
+        transform: translateX(-30px);
+        animation: fadein 1s;
+        animation: listfade 1s ease forwards ;
+        animation-delay: calc(var(--animation-order) * 400ms);
     }
     @keyframes fadein{
         from {

@@ -10,15 +10,4 @@ const navslide = () =>{
 
     
 }
-const loadin =() =>
-{
-    const links = document.querySelectorAll('.menu_2 li');
-        links.forEach((link,index) => 
-        {
-            link.style.animation ='listfade 0.5s ease forwards ${index / 10 + 2}s';
-            console.log(index /10)
-        });    
-
-}
 navslide();
-loadin();
