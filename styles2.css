@@ -49,20 +49,25 @@
         text-align: center;
         margin-top: auto;
         animation: fly 1s ease-in-out;
+        font-size: 2em;
     }
     .nav-bar{
         display: flex;
         justify-content: space-between;
-        padding: 20px;
-        font-size: 20px;
+        padding: 15px;
+        font-size: 1.5em;
         animation: fly 2s ease-in-out;
     }
     .left{
         display: flex;
-
+        justify-content: space-around;
+        align-items: center;
     }
     .right{
         display: flex;
+    }
+    .nav-bar div{
+        align-items: center;
     }
     .nav-bar > .left > div{
         margin-right: 50px;
@@ -91,6 +96,9 @@
         color: rgb(255, 255, 255);
         text-align: center;
         font-size: 30px;
+    }
+    .box{
+        margin-top: 2%;
     }
     .box h1{
         color: rgb(255, 255, 255);
@@ -131,6 +139,27 @@
         border-radius: 5PX;
         color: black;
     }
+    .menu {
+        position: absolute;
+        margin-left: 3%;
+        margin-top: -3%;
+        display: none;
+        opacity: 0;
+        pointer-events: none;  
+        transform: translateX(-20px);
+        transition: transform 0.5s ease-in-out;
+    }
+    .menu ul{
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: left  ;
+        flex-direction: column;
+    }
+    .menu li{
+        color: white;
+        list-style: none;
+    }
     @keyframes fadein{
         from {
             opacity: 0;
@@ -149,6 +178,14 @@
             opacity: 1;
         }
     }
+    @keyframes fadeout{
+        from {
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
     @keyframes fly2{
         0%{
             transform: translateX(-200px);
@@ -159,7 +196,7 @@
             opacity: 1;
         }
     }
-    @media screen and (max-width:1024px){
+    @media screen and (max-width:720px){
         body{
             overflow-x: hidden;
         }
@@ -183,9 +220,21 @@
         }
         .triangle{
             display: block;
+            transform: rotate(-90deg);
+        }
+        .menu{
+            display: block;
         }
       }
       .nav-active{
-          
+          pointer-events: all;
+          opacity: 1;
+          transform: translateX(0px);
+          animation: fadein 0.5s ease-in-out;
       }
+      .nav-active2{
+        animation: fadeout 0.5s ease-in;
+        opacity: 0;
+        transition: fadeout 0.5 ease-out;
+    }
 
