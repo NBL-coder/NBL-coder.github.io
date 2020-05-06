@@ -190,7 +190,7 @@
         animation-delay: calc(var(--animation-order) * 400ms);
     }
     .chapter{
-        padding: 2em;
+        padding: 1.3em;
         transition: 0.5s ease-in-out;
     }
     .chapter h1{
@@ -205,6 +205,16 @@
     }
     .chapter h1:nth-child(2){
         color: white;
+    }
+    footer{
+        padding: 1em;
+        opacity: 0;
+        pointer-events: none;
+    }
+    header{
+        padding: 0.5em;
+        opacity: 0;
+        pointer-events: 0;
     }
     @keyframes fadein{
         from {
