@@ -6,8 +6,5 @@ const navslide = () =>{
         nav.classList.toggle('nav-active');});
     triangle.addEventListener('click',() => {
         nav2.classList.toggle('nav-active2');});
-
-
-    
 }
 navslide();

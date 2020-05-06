@@ -36,7 +36,6 @@
         border-radius: 15 px;
         background-color: rgb(0, 0, 0,0.4);
         border-radius: 40px;
-        /*animation: fadein 1s ease-in;*/
       
     }
     .header{
@@ -65,6 +64,7 @@
     }
     .right{
         display: flex;
+        transition: 0.5s;
     }
     .nav-bar div{
         align-items: center;
@@ -77,11 +77,6 @@
         margin-left: 20px;
         font-size: 1em;
         color: white;
-    }
-    .nav-link{
-        height: 20px;
-        border-bottom: 1px solid transparent;
-        transition: border-bottom 0.2s;
     }
     .nav-link a {
         color: #ffffff;
@@ -104,7 +99,6 @@
         color: rgb(255, 255, 255);
         font-size: 25px;
         margin-left: 20px;
-        animation: fadein 2s ease-in-out;
     }
     .box ul{
         position: relative;
@@ -194,6 +188,23 @@
         animation: fadein 1s;
         animation: listfade 1s ease forwards ;
         animation-delay: calc(var(--animation-order) * 400ms);
+    }
+    .chapter{
+        padding: 2em;
+        transition: 0.5s ease-in-out;
+    }
+    .chapter h1{
+        position: absolute;
+    }
+    .chapter:hover{
+        transform: translateX(20px);
+        transition: 0.5s ease-in-out;
+    }
+    .chapter h1:nth-child(1){
+        color: white;
+    }
+    .chapter h1:nth-child(2){
+        color: white;
     }
     @keyframes fadein{
         from {

@@ -42,6 +42,7 @@
     .right{
         display: flex;
         color: rgb(124, 124, 124);
+        transition: 0.5s ease-in-out;
     }
     .header{
         padding: 20px;
@@ -195,6 +196,24 @@
         animation: listfade 1s ease forwards ;
         animation-delay: calc(var(--animation-order) * 400ms);
     }
+    .chapter{
+        padding: 2em;
+        transition: 0.5s ease-in-out;
+    }
+    .chapter h1{
+        position: absolute;
+    }
+    .chapter:hover{
+        transform: translateX(20px);
+        transition: 0.5s ease-in-out;
+    }
+    .chapter h1:nth-child(1){
+        color: white;
+    }
+    .chapter h1:nth-child(2){
+        color: white;
+    }
+
     @keyframes fadein{
         from {
             opacity: 0;
