@@ -10,6 +10,8 @@
     }
     
     .nav-bar{
+        position: sticky;
+        top:0;
         display: flex;
         justify-content: space-between;
         padding: 15px;
@@ -17,6 +19,10 @@
         animation: fly 2s ease-in-out;
         transition: 0.5s ease-in-out;
         z-index: 3;
+    }
+    .nav-scroll{
+        background-color: rgb(0, 0, 0,0.8);
+        border-radius: 20px;
     }
     .line{
         width: 39px;
@@ -143,7 +149,20 @@
         padding: 5px;
         border-radius: 4px;
     }
-    
+    a {
+        text-decoration : none;
+        color: rgb(124, 124, 124);
+        letter-spacing: 1px;
+        transition: 0.3s;
+        }
+     a:hover
+    {
+        padding: 5px 5px;
+        background-color: rgb(124, 124, 124,0.5);
+        border-radius: 5PX;
+        color: black;
+        opacity: 1;
+    }
      .menu {
         position: absolute;
         margin-left: 3%;
@@ -156,24 +175,14 @@
     }
     .menu ul{
         height: 70px;
-        width: 250px;
         display: flex;
-        font-size: 0.9em;
         justify-content: space-between;
         align-items: center;
     }
     .menu li{
         list-style: none;
-    }
-    .menu li:hover{
-        background-color: rgb(0, 0, 0,0.2);
-        padding: 5px;
-        border-radius: 4px;
-    }
-    #ea:hover{
-        background-color: white;
-        padding: 5px;
-        border-radius: 4px;
+        padding-bottom: 0.5em;
+        padding-right: 0.5em;
     }
     .menu a{
         color: rgb(124, 124, 124); 
@@ -185,8 +194,8 @@
     #easter{
         color: white;
     }
-    #easter:hover{
-        background-color: white; 
+    .easter-scroll{
+        opacity: 0;
     }
     .nav-link a:hover{
         background-color: rgb(124, 124, 124);
@@ -207,6 +216,7 @@
     }
     .chapter h1{
         position: absolute;
+        overflow: hidden;
     }
     .chapter:hover{
         transform: translateX(20px);

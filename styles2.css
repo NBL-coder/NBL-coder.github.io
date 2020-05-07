@@ -51,13 +51,20 @@
         font-size: 2em;
     }
     .nav-bar{
+        position: sticky;
+        top:0;
         display: flex;
         justify-content: space-between;
         padding: 15px;
         font-size: 1.5em;
         animation: fly 2s ease-in-out;
         transition: 0.5s ease-in;
+        
         z-index: 3;
+    }
+    .nav-scroll{
+        background-color: rgb(0, 0, 0,0.8);
+        border-radius: 20px;
     }
     .left{
         padding-left: 1.4em;
@@ -184,6 +191,7 @@
         color: white;
         list-style: none;
         padding-right: 0.5em;
+        padding-bottom: 0.5em;
     }
     .menu_2 li{
         opacity: 0;
@@ -199,6 +207,7 @@
 
     }
     .chapter h1{
+        overflow: hidden;
         position: absolute;
     }
     .chapter:hover{
@@ -287,6 +296,7 @@
         .menu{
             display: block;
         }
+        
       }
       .nav-active{
           pointer-events: all;
