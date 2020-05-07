@@ -1,4 +1,4 @@
-
+    
     *{
         margin: 0px;
         box-sizing: border-box;
@@ -56,8 +56,11 @@
         padding: 15px;
         font-size: 1.5em;
         animation: fly 2s ease-in-out;
+        transition: 0.5s ease-in;
+        z-index: 3;
     }
     .left{
+        padding-left: 1.4em;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -174,13 +177,13 @@
     .menu ul{
         height: 70px;
         display: flex;
-        justify-content: space-around;
-        align-items: left  ;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center ;   
     }
     .menu li{
         color: white;
         list-style: none;
+        padding-right: 0.5em;
     }
     .menu_2 li{
         opacity: 0;
@@ -190,8 +193,10 @@
         animation-delay: calc(var(--animation-order) * 400ms);
     }
     .chapter{
-        padding: 1.3em;
+        padding: 2em;
         transition: 0.5s ease-in-out;
+        z-index: 1.5;
+
     }
     .chapter h1{
         position: absolute;
@@ -199,6 +204,7 @@
     .chapter:hover{
         transform: translateX(20px);
         transition: 0.5s ease-in-out;
+        
     }
     .chapter h1:nth-child(1){
         color: white;
@@ -293,6 +299,9 @@
         opacity: 0;
         transition: fadeout 0.5 ease-out;
         pointer-events: none;
+    }
+    .nav-stick{
+        background-color: rgb(0, 0, 0,0.8);
     }
     
 

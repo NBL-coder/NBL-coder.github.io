@@ -8,3 +8,4 @@ const navslide = () =>{
         nav2.classList.toggle('nav-active2');});
 }
 navslide();
+
