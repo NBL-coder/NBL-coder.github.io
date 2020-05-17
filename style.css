@@ -399,10 +399,28 @@ input::placeholder{
         margin-top: 0.2rem;
         margin-left: 0.2rem;
         width: 98%;
-        height: 63%;
+        height: 80%;
         overflow: hidden;
         overflow-y: scroll;
     } 
+}
+@media screen and (max-height:500px){
+    .item:nth-child(1) .all{
+        border-radius: 1rem;
+        position: absolute;
+        margin-top: 0.2rem;
+        margin-left: 0.2rem;
+        width: 98%;
+        height: 70%;
+        overflow: hidden;
+        overflow-y: scroll;
+    } 
+    .item:nth-child(1) .box_header{
+        display: none;
+    }
+    .item:nth-child(2) .box_header{
+        display: none;
+    }
 }
 
 /* --------------SCROLL-BAR--------------- */
