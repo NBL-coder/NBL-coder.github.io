@@ -306,7 +306,7 @@ input::placeholder{
     }
 }
 /* ---------resonsive------------ */
-@media screen and (max-width:800px){
+@media screen and (max-width:720px){
     /* ===========BODY============ */
     body{
         background-image: url("./img/og_file/4.jpg");
