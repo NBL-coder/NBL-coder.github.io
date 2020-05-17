@@ -11,7 +11,6 @@ const css_l = document.querySelector('.css-l');
 // window.addEventListener('scroll',() =>{
 //     console.log(window.innerHeight);
 // });
-// console.log(list.length);
 console.log(item1.getBoundingClientRect().top);
 all.addEventListener('scroll',() =>{
         var index;
