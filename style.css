@@ -23,8 +23,8 @@ body{
     padding: 1rem;
 }
 .nav-bar{
-    border:2px solid rgb(255, 255, 255,0.6);
-    background-color: rgb(0, 0, 0,0.6);
+    /* border:2px solid rgb(255, 255, 255,0.6);
+    background-color: rgb(0, 0, 0,0.6); */
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
@@ -86,21 +86,21 @@ a {
 }
 
 .item:nth-child(1){
-    border:2px solid rgb(255, 255, 255,0.6);
-    background-color: rgb(0, 0, 0,0.4);
+    /* border:2px solid rgb(255, 255, 255,0.6);
+    background-color: rgb(0, 0, 0,0.4); */
     border-radius: 1rem;
     grid-row: span 2;
     position: relative;
 }
 .item:nth-child(2){
-    border:2px solid rgb(255, 255, 255,0.6);
-    background-color: rgb(0, 0, 0,0.4);
+    /* border:2px solid rgb(255, 255, 255,0.6);
+    background-color: rgb(0, 0, 0,0.4); */
     border-radius: 1rem;
     position: relative;
 }
 .item:nth-child(3){
-    border:2px solid rgb(255, 255, 255,0.6);
-    background-color: rgb(0, 0, 0,0.4);
+    /* border:2px solid rgb(255, 255, 255,0.6);
+    background-color: rgb(0, 0, 0,0.4); */
     border-radius: 1rem;
     position: relative;
 }
@@ -110,12 +110,10 @@ a {
 }
 /* ---------------INFO:CHILD------------- */
 .box_header{
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    border-radius: 0.8rem;
+    /* border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.8rem; */
     padding: 1rem;
-}
-.box_header{
-    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.4); */
 }
 .box_header h1{
     font-family: sans-serif;
@@ -134,13 +132,12 @@ overflow: hidden;
 overflow-y: scroll;
 } 
 .item:nth-child(2) .all{
-    position: absolute;
+    /* position: absolute; */
     display: inline-flex;
     border-radius: 1rem;
     margin-top: 0.5rem;
     margin-left: 1rem;
     width: 95%;
-    height: 80%;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -164,6 +161,19 @@ input:focus{
 input::placeholder{
     color: white;
 }
+.item:nth-child(2) .info_html{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 95%;
+    color: white;
+    align-content: center;
+}
+.item:nth-child(2) .info_html h2
+{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
 
 /* ==============CHAPTER================ */
 .chapter{
@@ -186,6 +196,10 @@ input::placeholder{
 .stick{
     /* background-color: rgba(255, 255, 255, 0.4); */
     z-index: 2;
+}
+.stick_fade
+{
+    opacity: 0;
 }
 /* ================MENU_2================*/
 .menu_2 li{
@@ -320,15 +334,19 @@ input::placeholder{
     .nav-link{
         padding-left: 0.2rem;
         padding-right:0.4rem;
+      
     } 
     .right{
         padding-right: 0;
+      
     }
     .left{
         text-align: center;
+    
     }
     /* ===========INFO============ */
     .info {
+       
         padding: 1rem;
         padding-right: 0.2rem;
         width: 98vw;
@@ -340,20 +358,24 @@ input::placeholder{
     
     }
     .item:nth-child(1){
+       
         background-color: rgb(0, 0, 0,0.4);
         border-radius: 1rem;
     }
     .item:nth-child(2){
+     
         background-color: rgb(0, 0, 0,0.4);
         border-radius: 1rem;
     }
     .item:nth-child(3){
+        
         background-color: rgb(0, 0, 0,0.4);
         border-radius: 1rem;
     }
     /* ==============INFO:CHILD============ */
     .chapter{
         position: sticky;
+       
         top:0;
         padding: 2rem;
         padding-top: 1rem;
@@ -363,11 +385,13 @@ input::placeholder{
         z-index: 1.5;
     }
     .chapter h1{
+  
         font-family: sans-serif;
         overflow: hidden;
         position: absolute;
     }  
     .item:nth-child(1) .all{
+    
         border-radius: 1rem;
         position: absolute;
         margin-top: 0.2rem;
@@ -378,6 +402,7 @@ input::placeholder{
         overflow-y: scroll;
     } 
     .item:nth-child(2) .all input{
+     
         flex-grow:1 ;
         background-color: rgb(0, 0, 0,0.2);
         height:10%;
@@ -391,27 +416,30 @@ input::placeholder{
         color: white;
     }
 
+
 }
 @media screen and (max-height:650px){
     .item:nth-child(1) .all{
+  
         border-radius: 1rem;
         position: absolute;
         margin-top: 0.2rem;
         margin-left: 0.2rem;
         width: 98%;
-        height: 80%;
+        height: 85%;
         overflow: hidden;
         overflow-y: scroll;
     } 
 }
 @media screen and (max-height:500px){
     .item:nth-child(1) .all{
+     
         border-radius: 1rem;
         position: absolute;
         margin-top: 0.2rem;
         margin-left: 0.2rem;
         width: 98%;
-        height: 70%;
+        height: 90%;
         overflow: hidden;
         overflow-y: scroll;
     } 

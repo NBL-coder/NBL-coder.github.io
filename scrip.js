@@ -25,10 +25,18 @@ all.addEventListener('scroll',() =>{
             {
                 chapter[index].classList.remove('stick');
             }
+            if(chapter[index].getBoundingClientRect().top <=140)
+            {
+              chapter[index].classList.add('stick_fade');
+            }
+            else
+            {
+              chapter[index].classList.remove('stick_fade');
+            }
         }
         for(index2 = 0 ; index2 < list.length;index2 ++)
         {
-            if(list[index2].getBoundingClientRect().top >= item1.getBoundingClientRect().top + 120)
+            if(list[index2].getBoundingClientRect().top >= item1.getBoundingClientRect().top + 110)
             {
                 list[index2].classList.remove('li_add');
                 span[index2].classList.remove('li_add');
