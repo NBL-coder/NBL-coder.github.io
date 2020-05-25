@@ -7,6 +7,20 @@ const item2 =document.querySelector('.item:nth-child(2)');
 const all = document.querySelector('.all');
 const html_l = document.querySelector('.html-l');
 const css_l = document.querySelector('.css-l');
+const li_op = document.querySelector('.menu_3');
+const allLis = document.querySelectorAll('li > a');
+const miniDemo = document.querySelector('.mini-demo');
+
+console.log(miniDemo);
+
+miniDemo.getElementsByClassNa
+for(let item of allLis) {
+  item.addEventListener('mouseover', function(e) {
+    miniDemo.src = e.target.href;
+  })
+}
+
+
 // console.log(track);
 // window.addEventListener('scroll',() =>{
 //     console.log(window.innerHeight);
@@ -56,19 +70,20 @@ filterInput.addEventListener('keyup', filterNames);
 
 function filterNames(){
   // Get value of input
+ 
   let filterValue = document.getElementById('filterInput').value.toUpperCase();
-
   let li = document.querySelectorAll('.menu_2 li');
-
   // Loop through collection-item lis
   for(let i = 0;i < li.length;i++){
     let a = li[i].getElementsByTagName('a')[0];
     // If matched
     if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
       li[i].style.display = '';
-    } else {
+    } 
+    else {
       li[i].style.display = 'none';
     }
+
   }
 }
 
