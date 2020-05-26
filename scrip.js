@@ -10,8 +10,8 @@ const css_l = document.querySelector('.css-l');
 const li_op = document.querySelector('.menu_3');
 const allLis = document.querySelectorAll('li > a');
 const miniDemo = document.querySelector('.mini-demo');
-
-console.log(miniDemo);
+const nav_link =document.querySelector('a.html-l');
+const nav_link2 =document.querySelector('a.css-l');
 
 miniDemo.getElementsByClassNa
 for(let item of allLis) {
@@ -19,13 +19,33 @@ for(let item of allLis) {
     miniDemo.src = e.target.href;
   })
 }
-
-
+nav_link.addEventListener('click',function(e) {
+  let li = document.querySelectorAll('.menu_2 a');
+  for (let i = 0; i < 15 ;i ++)
+  {
+    li[i].classList.toggle("nav_bg");
+  }
+  for (let i = 0; i< 5; i++)
+  {
+    chapter[i].classList.toggle("chapter_bg");
+  }
+});
+nav_link2.addEventListener('click',function(e) {
+  let li = document.querySelectorAll('.menu_2 a');
+  for (let i = 15; i < 46 ;i ++)
+  {
+    li[i].classList.toggle("nav_bg");
+  }
+  for (let i = 5; i< 13; i++)
+  {
+    chapter[i].classList.toggle("chapter_bg");
+  }
+});
 // console.log(track);
 // window.addEventListener('scroll',() =>{
 //     console.log(window.innerHeight);
 // });
-console.log(item1.getBoundingClientRect().top);
+// console.log(item1.getBoundingClientRect().top);
 all.addEventListener('scroll',() =>{
         var index;
         var index2;
@@ -83,7 +103,6 @@ function filterNames(){
     else {
       li[i].style.display = 'none';
     }
-
   }
 }
 
